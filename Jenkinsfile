@@ -3,7 +3,10 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        sh '\'mvn -B -DskipTests clean package\'sh \'mvn -B -DskipTests clean package\''
+        echo 'hello there mystical man'
+        sleep 6
+        writeFile(file: 'q_file.txt', text: 'hello from Jenkins', encoding: 'utf-8')
+        input(message: 'please press some key', id: 'B2B2B', ok: '1', submitter: 'what')
       }
     }
   }
