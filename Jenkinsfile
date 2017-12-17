@@ -13,6 +13,8 @@ pipeline {
     stage('test') {
       steps {
         echo 'this was edited directly in the Jenkinsfile on GitHub. Hurra!'
+        sleep 6
+        echo 'this was edited directly in the Jenkinsfile on GitHub. Hurra!'
       }
     }
   }
