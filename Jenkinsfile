@@ -12,7 +12,7 @@ pipeline {
     }
     stage('test') {
       steps {
-        echo 'ppppppppppppp'
+        echo 'this was edited directly in the Jenkinsfile on GitHub. Hurra!'
       }
     }
   }
